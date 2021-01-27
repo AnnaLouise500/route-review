@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <!--Navigation-->
+    <!--Navigation-->
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <h5 class="text-white h4"><a href="{{ url_for('index') }}">Home</a></h5>
-            <h5 class="text-white h4"><a href="{{ url_for('search') }}">Search for a Review</a></h5>
-            <h5 class="text-white h4"><a href="{{ url_for('create') }}">Create a Review</a></h5>
-            <h5 class="text-white h4"><a href="{{ url_for('addroute') }}">Add a Route</a></h5>
-            <h5 class="text-white h4"><a href="{{ url_for('login') }}">Login</a></h5>
+            <h5 class="text-white"><a href="{{ url_for('index') }}">Home</a></h5>
+            <h5 class="text-white"><a href="{{ url_for('search') }}">Search for a Review</a></h5>
+            <h5 class="text-white"><a href="{{ url_for('create') }}">Create a Review</a></h5>
+            <h5 class="text-white"><a href="{{ url_for('addroute') }}">Add a Route</a></h5>
+            <h5 class="text-white"><a href="{{ url_for('login') }}">Login</a></h5>
         </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">
@@ -29,11 +29,18 @@
         </div>
     </nav>
 
+    <!--Hero Image-->
+    
+
+
+
     {% block content %}
     {% endblock %}
 
     <!--Script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

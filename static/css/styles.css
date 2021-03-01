@@ -644,6 +644,14 @@ pre code {
   max-width: 100%;
 }
 
+.padding-1 {
+    position: relative;
+    padding-top: 20px;
+    justify-content: center;
+    width: 70px;
+    padding-left: 145px;
+}
+
 .col-1 {
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
@@ -10119,7 +10127,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/nav-background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

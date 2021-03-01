@@ -31,6 +31,12 @@ def login():
     return render_template("login.html")
 
 
+# createlogin
+@app.route("/createlogin")
+def createlogin():
+    return render_template("createlogin.html")
+
+
 # search
 @app.route("/search")
 def search():

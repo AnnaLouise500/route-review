@@ -54,10 +54,10 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Route Search</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Fill in the fields below to see which routes to choose from!</h3>
             </div>
             <!-- Search Box -->
-            <form class="mx-auto" style="width: 350px;">
+            <form class="col-auto">
                 <div class="form-group">
                     <label for="routename">Route Name</label>
                     <input type="text" class="form-control" id="routename" placeholder="Route Name">
@@ -98,27 +98,36 @@
                         <option>8b</option>
                         <option>8b+</option>
                     </select>
-                    <div class="padding-1">
+                    <div class="padding-1 col-auto">
                         <button type="submit" class="btn btn-md btn-primary mb-2">Search</button>
                     </div>
                 </div>
             </form>
             <!-- Review Route -->
-            <section class="page-section bg-light" id="review">
+            <section class="page-section" id="review">
                 <div class="container">
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">Review a Route</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 class="section-subheading text-muted">Enter a route name in the search field below!</h3>
                     </div>
+                    <form class="col-auto">
+                        <div class="form-group">
+                            <label for="routenamereview">Route Name</label>
+                            <input type="text" class="form-control" id="routenamereview" placeholder="Route Name">
+                        </div>
+                        <div class="padding-1">
+                            <button type="submit" class="btn btn-md btn-primary mb-2">Search</button>
+                        </div>
+                    </form>
                     <!--Add a Route-->
                     <section class="page-section" id="addroute">
                         <div class="container">
                             <div class="text-center">
                                 <h2 class="section-heading text-uppercase">Add a Route</h2>
-                                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                                <h3 class="section-subheading text-muted">Not found the route you were looking for? Add it here!</h3>
                             </div>
                             <!-- Login -->
-                            <section class="page-section bg-light" id="login">
+                            <section class="page-section" id="login">
                                 <div class="container">
                                     <div class="text-center">
                                         <h2 class="section-heading text-uppercase">Login to Route Review</h2>
@@ -143,7 +152,7 @@
                                     <footer class="footer py-4">
                                         <div class="container">
                                             <div class="row align-items-center">
-                                                <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                                                <div class="col-lg-4 text-lg-left">Copyright © RouteReview 2020</div>
                                                 <div class="col-lg-4 my-3 my-lg-0">
                                                     <a class="btn btn-dark btn-social mx-2" href="#!"><i
                                                             class="fab fa-twitter"></i></a>

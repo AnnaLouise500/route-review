@@ -647,11 +647,10 @@ pre code {
 .padding-1 {
     position: relative;
     padding-top: 20px;
-    justify-content: center;
-    width: 70px;
-    padding-left: 145px;
 }
-
+.submitbutton {
+    padding-top:20px;
+}
 .col-1 {
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
@@ -2120,6 +2119,7 @@ textarea.form-control {
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
+  padding-top: 20px;
 }
 .form-row > .col,
 .form-row > [class*=col-] {
@@ -9995,6 +9995,12 @@ p {
 
 .page-section {
   padding: 6rem 0;
+}
+.loginheader {
+    padding-bottom: 20px;
+}
+.createlogin {
+    padding: 1rem 0;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;

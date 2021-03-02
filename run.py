@@ -43,6 +43,13 @@ def search():
     return render_template("search.html")
 
 
+# route record
+@app.route("/routerecord")
+def routerecord():
+    data = []
+    with open("data/routerecords.json") as json_data:
+        data = json.load(json_data)
+    return render_template("routerecord.html", routerecorddata=data)
 
 
 # @app.route("/##")

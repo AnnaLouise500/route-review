@@ -25,57 +25,64 @@
 <body>
     <div class="btn"><a href="{{ url_for('index') }}">Back</a>
     </div>
-    <div class="container" style="margin-top: 20px;">
-        <div class="row">
-            <div class="col-sm-12 grid-sm text-center spacing route-information">
-                <p class="routecard-header">Route Name and Grade</p>
+    <!--Route Name, Grade and written Location-->
+    <section class="page-section">
+        <div class="container">
+            <div class="col-sm-12 grid-sm text-center routename">
+                <h2 class="section-heading text-uppercase">Route Name <span class="grade">Grade</span></h2>
+                <h3 class="section-subheading text-muted">Located in Fachwen
+                </h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 grid-sm text-center spacing">
-                <p class="routecard-header">Other users think this is...</p>
-                <div class="d-flex justify-content-center my-4 slider">
-                    <span class="font-weight-bold blue-text mr-2 mt-1" style="color: green;">Easy</span>
-                    <form class="range-field w-50">
-                        <input class="border-0" type="range" min="0" max="4" step="1" />
-                    </form>
-                    <span class="font-weight-bold blue-text ml-2 mt-1" style="color: red;">Hard</span>
-                </div>
-                
+    </section>
+    <!--Google Maps Location-->
+    <section class="page-section" id="map-container">
+        <div class="col-sm-12 grid-sm text-center ">
+            <div id="map">
             </div>
+        </div>
+    </section>
+    <!--Grade Rating-->
+    <section class="page-section">
+        <div class="col-sm-12 grid-sm text-center difficulty">
+            <h3 class="section-subheading text-muted">Rating
+            </h3>
+        </div>
+    </section>
+    <!--Key Words-->
+    <section class="page-section">
+        <div class="key-words">
 
-            <div class="col-sm-6 grid-sm text-center spacing">
-                <div id="map">
+        </div>
+    </section>
 
-                </div>
+
+    <div class="row">
+        <div class="col-sm-12 grid-large route-images">
+            <div id="image-gallery">
+                <figure>
+                    <img src="/static/assets/img/testimg1.jpg" alt>
+                    <img src="/static/assets/img/testimg2.jpg" alt>
+                    <img src="/static/assets/img/testimg3.jpg" alt>
+                    <img src="/static/assets/img/testimg4.jpg" alt>
+                </figure>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 grid-large route-images spacing">
-                <div id="image-gallery">
-                    <figure>
-                        <img src="/static/assets/img/testimg1.jpg" alt>
-                        <img src="/static/assets/img/testimg2.jpg" alt>
-                        <img src="/static/assets/img/testimg3.jpg" alt>
-                        <img src="/static/assets/img/testimg4.jpg" alt>
-                    </figure>
-                </div>
-            </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-12 grid-large text-center  review">
+            Reviews
         </div>
-        <div class="row ">
-            <div class="col-sm-12 grid-large text-center spacing route-information">
-                Reviews
-            </div>
-        </div>
+    </div>
     </div>
 
     <script src="/static/js/scripts.js"></script>
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9GUkfQMEzRJuvppiZfePvSXDTCcdQcEk&callback=initMap">
         </script>
-        <script src="{{ url_for('static', filename='js/tagsinput.js') }}"></script>
-        <script src="/static/js/package.json"></script>
-        <script src="/static/js/package-lock.json"></script>
+    <script src="{{ url_for('static', filename='js/tagsinput.js') }}"></script>
+    <script src="/static/js/package.json"></script>
+    <script src="/static/js/package-lock.json"></script>
 
 </body>
 

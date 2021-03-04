@@ -238,10 +238,6 @@ label {
   margin-bottom: 0.5rem;
 }
 
-.label {
-  
-}
-
 button {
   border-radius: 0;
 }
@@ -10719,7 +10715,6 @@ div#image-gallery figure {
     display: block;
     padding: 4px 6px;
     color: #555;
-    vertical-align: middle;
     border-radius: 4px;
     max-width: 100%;
     line-height: 22px;
@@ -10734,4 +10729,8 @@ div#image-gallery figure {
     margin: 0;
     width: auto;
     max-width: inherit;
+}
+#tags {
+    height: 100%;
+    
 }

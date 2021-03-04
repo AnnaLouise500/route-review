@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/css/tagsinput.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tagsinput.css') }}">
 
 
 </head>
@@ -41,9 +41,7 @@
                     </form>
                     <span class="font-weight-bold blue-text ml-2 mt-1" style="color: red;">Hard</span>
                 </div>
-                <div class="hashtags">
-                    <input type="text" value="" data-role="tagsinput" id="tags" class="form-control">
-                </div>
+                
             </div>
 
             <div class="col-sm-6 grid-sm text-center spacing">
@@ -75,8 +73,7 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9GUkfQMEzRJuvppiZfePvSXDTCcdQcEk&callback=initMap">
         </script>
-        <script src="../js/bootstrap-tagsinput.js"></script>
-        <script src="/static/js/tagsinput.js"></script>
+        <script src="{{ url_for('static', filename='js/tagsinput.js') }}"></script>
         <script src="/static/js/package.json"></script>
         <script src="/static/js/package-lock.json"></script>
 

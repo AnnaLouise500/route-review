@@ -70,11 +70,11 @@ body {
 }
 
 .results {
-    background-color: #007bff;
-    height: 75vh;
+    overflow: scroll;
+    height: 90vh;
     width: 80vw;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 40px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10696,7 +10696,48 @@ section#contact form#contactForm :-ms-input-placeholder {
 .routename {
     margin-top: -80px;
 }
+.search-result {
+    background: rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+.search-record {
+    max-height: 150px;
+    padding: 5px;
+}
+.search-record-image {
+    width: 100%;
+    height:100%;
+    
+}
+.search-route-detail {
+    line-height: 30px;
+}
+.search-route-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
 
+}
+.search-route-location {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+.search-route-grade {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #fed136;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
 /*Google Maps*/
 #map {
         height: 250px;

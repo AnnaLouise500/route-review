@@ -10668,6 +10668,30 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 .review {
     border: 1px solid black;
+    line-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.add-review {
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.add-review-button {
+    margin: 0 auto;
+}
+.review-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+}
+.review-rating {
+    background: rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fed136;
 }
 .routename {
     margin-top: -80px;
